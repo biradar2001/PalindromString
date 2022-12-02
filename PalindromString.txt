@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Abc {
+
+	public static void main(String[] args) {
+		System.out.println("Enter a String :");
+		Scanner sc = new Scanner (System.in);
+		String str=sc.next();
+		String  Str1 = "";
+	    
+	  for(int i=str.length()-1;i>=0;--i)
+	  {
+		  Str1= Str1+str.charAt(i);
+	  }
+	  if(str.equals(Str1))
+	  {
+		  System.out.println("palindrom String");
+	  }
+	  else
+	  {
+		  System.out.println("Not palindrom String");
+	  }
